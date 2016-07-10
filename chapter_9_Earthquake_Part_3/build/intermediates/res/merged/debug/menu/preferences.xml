@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.paad.earthquake.Earthquake" >
+
+<item android:id="@+id/search_view_id"
+          android:title="@string/search_description"
+          android:icon="@drawable/best_oval_brick_work"
+          android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" />
+    
+<item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/settings"/>
+
+<item
+        android:id="@+id/start_update_service"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/start_update_service_desc"/>
+
+<item
+        android:id="@+id/stop_update_service"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/stop_update_service_desc"/>
+	
+<item
+        android:id="@+id/start_auto_update_service"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/start_auto_update_service_desc"/>
+
+	<item
+        android:id="@+id/stop_auto_update_service"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/stop_auto_update_service_desc"/>
+	
+</menu>

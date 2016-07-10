@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	>
+    <TextView
+        android:id="@+id/QuakeListId"
+        android:width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="10dp"
+        android:background="#adbbad"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+    <TextView
+        android:id="@+id/QuakeListDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="10dp"
+        android:background="#ff0033"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+    <TextView
+        android:id="@+id/QuakeListSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/QuakeListDate"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="3dp"
+        android:background="#adbbad"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+    
+</RelativeLayout>

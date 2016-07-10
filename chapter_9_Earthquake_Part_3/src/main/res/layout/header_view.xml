@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/QuakeDateHeader_id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="100dp"
+        android:background="#adaaad"
+        android:clickable="true"
+        android:text="@string/quake_date_desc"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/QuakeInfo_id_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="10dp"
+        android:background="#adbbad"
+        android:clickable="true"
+        android:text="@string/quake_info_desc"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+>>>>>>> branch 'working' of https://github.com/mooseandpebs/EarthquateChap9_3.git
+</LinearLayout>

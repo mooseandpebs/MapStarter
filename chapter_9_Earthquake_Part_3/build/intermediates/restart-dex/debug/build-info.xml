@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="19"
+    density="xhdpi"
+    format="7"
+    timestamp="5153796825647"
+    token="-2868346918828706309" >
+
+    <task
+        name="javac"
+        duration="121" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="71" />
+    <task
+        name="verifier"
+        duration="13" />
+
+    <artifact
+        location="E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\outputs\apk\chapter_9_Earthquake_Part_3-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="5153796825647" >
+        <artifact
+            location="E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\outputs\apk\chapter_9_Earthquake_Part_3-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

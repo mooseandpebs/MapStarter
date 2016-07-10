@@ -1,0 +1,56 @@
+-injars 'E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'e:\Users\Administrator\AppData\Local\Android\sdk\build-tools\24.0.0\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration 'E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.paad.earthquake.PreferencesActivity {
+    <init>();
+}
+
+-keep class com.paad.earthquake.Earthquake {
+    <init>();
+}
+
+-keep class com.paad.earthquake.EarthquakeProvider {
+    <init>();
+}
+
+-keep class com.paad.earthquake.EarthquakeUpdateService {
+    <init>();
+}
+
+-keep class com.paad.earthquake.EarthquakeAlarmReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.common.api.GoogleApiActivity {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

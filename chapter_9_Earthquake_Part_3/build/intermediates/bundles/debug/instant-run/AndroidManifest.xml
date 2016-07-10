@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paad.earthquake"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="1" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/bright_sunset_small"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+    />
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.paad.earthquake.PreferencesActivity"
+            android:label="Earthquake Preferences" >
+        </activity>
+        <activity
+            android:name="com.paad.earthquake.Earthquake"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyBt_Gium_DLR22B0ZnbLGXWVL23Y04jGBU" />
+        </activity>
+
+        <provider
+            android:name="com.paad.earthquake.EarthquakeProvider"
+            android:authorities="com.paad.earthquakeprovider" />
+        <!--
+    activity android:name=".EarthquakeSearchResults" 
+	  android:label="Earthquake Search"
+	  android:launchMode="singleTop">
+      <- note: singleTop means the same activity handles the results ->
+	  <intent-filter>
+	    <action android:name="android.intent.action.SEARCH" />
+	    <category android:name="android.intent.category.DEFAULT" />
+	    
+	  </intent-filter>
+	  <meta-data
+	    android:name="android.app.searchable"
+	    android:resource="@xml/searchable"
+	  />
+    </activity
+        -->
+        <service
+            android:name="com.paad.earthquake.EarthquakeUpdateService"
+            android:enabled="true" />
+
+        <receiver android:name="com.paad.earthquake.EarthquakeAlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.paad.earthquake.ACTION_REFRESH_EARTHQUAKE_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

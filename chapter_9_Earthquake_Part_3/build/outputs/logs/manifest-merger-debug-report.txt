@@ -1,0 +1,223 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:2:1-79:12
+	package
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:3:3-32
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:5:3-28
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:4:3-26
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:6:2-8:41
+MERGED from [com.android.support:multidex:1.0.1] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:appcompat-v7:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-vector-drawable:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:7:9-35
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+		INJECTED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:10:3-64
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:10:20-62
+application
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:12:3-78:17
+MERGED from [com.android.support:appcompat-v7:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:14:5-37
+	android:allowBackup
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:16:5-32
+	android:icon
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:13:5-49
+	android:theme
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:15:5-36
+meta-data#com.google.android.geo.API_KEY
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:26:7-28:53
+	android:value
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:28:11-50
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:27:11-56
+uses-library#com.google.android.maps
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:31:5-59
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:31:19-57
+activity#com.paad.earthquake.PreferencesActivity
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:33:5-35:16
+	android:label
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:34:7-45
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:33:15-50
+activity#com.paad.earthquake.Earthquake
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:36:5-49:18
+	android:label
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:38:7-39
+	android:launchMode
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:39:7-37
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:37:7-33
+intent-filter#android.intent.action.MAIN+android.intent.action.SEARCH+android.intent.category.LAUNCHER
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:40:7-44:23
+action#android.intent.action.SEARCH
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:41:8-62
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:41:16-59
+action#android.intent.action.MAIN
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:42:11-63
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:42:19-60
+category#android.intent.category.LAUNCHER
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:43:6-66
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:43:16-63
+meta-data#android.app.searchable
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:45:5-48:6
+	android:resource
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:47:6-40
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:46:6-43
+provider#com.paad.earthquake.EarthquakeProvider
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:50:5-51:63
+	android:authorities
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:51:11-60
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:50:15-49
+service#com.paad.earthquake.EarthquakeUpdateService
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:66:5-78
+	android:enabled
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:66:14-36
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:66:37-76
+receiver#com.paad.earthquake.EarthquakeAlarmReceiver
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:67:5-73:13
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:67:15-54
+intent-filter#com.paad.earthquake.ACTION_REFRESH_EARTHQUAKE_ALARM
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:68:4-72:20
+action#com.paad.earthquake.ACTION_REFRESH_EARTHQUAKE_ALARM
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:69:6-71:8
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:70:8-74
+meta-data#com.google.android.gms.version
+ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:75:7-77:67
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:77:11-64
+	android:name
+		ADDED from E:\github\MapStarter\chapter_9_Earthquake_Part_3\src\main\AndroidManifest.xml:76:11-56
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:20:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.0\AndroidManifest.xml:24:8-31
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:20:9-22:45
+MERGED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.0\AndroidManifest.xml:20:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.2.0] E:\github\MapStarter\chapter_9_Earthquake_Part_3\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.0\AndroidManifest.xml:9:13-58

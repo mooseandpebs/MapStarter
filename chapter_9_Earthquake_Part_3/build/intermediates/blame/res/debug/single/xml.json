@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\github\\MapStarter\\chapter_9_Earthquake_Part_3\\build\\intermediates\\res\\merged\\debug\\xml\\userpreferences.xml",
+        "source": "E:\\github\\MapStarter\\chapter_9_Earthquake_Part_3\\src\\main\\res\\xml\\userpreferences.xml"
+    },
+    {
+        "merged": "E:\\github\\MapStarter\\chapter_9_Earthquake_Part_3\\build\\intermediates\\res\\merged\\debug\\xml\\searchable.xml",
+        "source": "E:\\github\\MapStarter\\chapter_9_Earthquake_Part_3\\src\\main\\res\\xml\\searchable.xml"
+    },
+    {
+        "merged": "E:\\github\\MapStarter\\chapter_9_Earthquake_Part_3\\build\\intermediates\\res\\merged\\debug\\xml\\preference_headers.xml",
+        "source": "E:\\github\\MapStarter\\chapter_9_Earthquake_Part_3\\src\\main\\res\\xml\\preference_headers.xml"
+    }
+]
