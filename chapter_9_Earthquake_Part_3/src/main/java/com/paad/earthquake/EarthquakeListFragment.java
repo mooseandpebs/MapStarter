@@ -13,6 +13,7 @@ import android.database.Cursor;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
@@ -25,6 +26,11 @@ import android.view.ViewGroup;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Context;
+
+import org.w3c.dom.Text;
+
+import static android.R.color.holo_blue_light;
 
 public class EarthquakeListFragment extends ListFragment 
 	implements LoaderManager.LoaderCallbacks<Cursor>
@@ -35,7 +41,7 @@ public class EarthquakeListFragment extends ListFragment
 	private String mQuery;
 
 	public interface Callback {
-		public void positionToMapCalled(Quake _Quakedata);
+		void positionToMapCalled(Quake _Quakedata);
 	}
 
 	public void setQuery(String _Query) {
@@ -57,16 +63,27 @@ public class EarthquakeListFragment extends ListFragment
 		}
 	}
 
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        if (!(activity instanceof Callback)) {
+            throw new IllegalStateException("Activity must implement fragments Callback interface");
+        }
+        mCallback = (Callback)activity;
+    }
 
-	@Override
-	public void onAttach(Activity activity) {
-		// TODO Auto-generated method stub
-		super.onAttach(activity);
-		if (!(activity instanceof Callback)) {
+    @Override
+	public void onAttach(Context context) {
+		super.onAttach(context);
+        Activity a;
+
+		if (!(context instanceof Callback)) {
 			throw new IllegalStateException("Activity must implement fragments Callback interface");
 		}
-		mCallback = (Callback) activity;
+        a = (Activity)context;
+		mCallback = (Callback)a;
 	}
+
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
@@ -106,7 +123,8 @@ public class EarthquakeListFragment extends ListFragment
 		String[] projection = { EarthquakeProvider.KEY_ID,EarthquakeProvider.KEY_DATE, 
 		        EarthquakeProvider.KEY_SUMMARY
 		        ,EarthquakeProvider.KEY_LOCATION_LAT
-		        ,EarthquakeProvider.KEY_LOCATION_LNG };
+		        ,EarthquakeProvider.KEY_LOCATION_LNG
+                ,EarthquakeProvider.KEY_MAGNITUDE};
 		    String where = EarthquakeProvider.KEY_SUMMARY
 		                     + " LIKE \"%" + mQuery + "%\"";
 		    String[] whereArgs = null;
@@ -158,10 +176,25 @@ public class EarthquakeListFragment extends ListFragment
 		try {
 			rootView = (ListView)inflater.
 					inflate(R.layout.listfragment_view,container,false);
-			rootView.setBackgroundColor(color.holo_blue_light);
+			rootView.setBackgroundColor(ContextCompat.getColor(getActivity(), holo_blue_light));
+            //rootView.setDescendantFocusability(ViewGroup.FOCUS_BEFORE_DESCENDANTS);
 			rootView.setFooterDividersEnabled(true);
 			View hv = inflater.inflate(R.layout.header_view,null);
 			mHeader = (LinearLayout)hv.findViewById(R.id.header_view);
+			TextView dateHeader = (TextView)mHeader.findViewById(R.id.QuakeDateHeader_id_textview);
+			dateHeader.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View view)
+				{
+					try {
+						if(mEarthquakeAdapter != null) {
+                            mEarthquakeAdapter.sortByDate();
+                        }
+					} catch (Exception e) {
+						Log.e(TAG,"Header on click(sort) err:"+e);
+					}
+				}
+			});
 			rootView.addHeaderView(mHeader);
 			View fv = inflater.inflate(R.layout.footer_views,null);
 			rootView.addFooterView(fv);
@@ -191,6 +224,13 @@ public class EarthquakeListFragment extends ListFragment
 				Quake q = (Quake)o;
 				Location loc = q.getLocation();
 				mCallback.positionToMapCalled(q);
+			}
+		}else if(v instanceof LinearLayout)
+		{
+			LinearLayout t = (LinearLayout) v;
+			if(t.getId() == R.id.header_view)
+			{
+				mEarthquakeAdapter.sortByDate();
 			}
 		}
 	}

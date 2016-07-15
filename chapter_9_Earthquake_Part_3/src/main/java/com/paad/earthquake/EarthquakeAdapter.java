@@ -2,11 +2,16 @@ package com.paad.earthquake;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 import android.R.integer;
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationManager;
 import android.text.format.DateFormat;
@@ -21,16 +26,19 @@ import android.widget.TextView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 
 public class EarthquakeAdapter extends BaseAdapter implements AdapterView.OnItemLongClickListener {
 
-	private ConcurrentHashMap<Integer, Quake> mQuakeMap 
-		= new ConcurrentHashMap<Integer, Quake>();
+	private List<Quake> mQuakeMap;
+
 	private final static String TAG = "EarthquakeAdapter";
+
 	public EarthquakeAdapter() {
 		super();
-		
+		mQuakeMap = Collections.synchronizedList(new ArrayList<Quake>());
 	}
+
 	@Override
 	public int getCount() {
 		
@@ -44,12 +52,11 @@ public class EarthquakeAdapter extends BaseAdapter implements AdapterView.OnItem
 
 	@Override
 	public long getItemId(int position) {
-		int id = ((Quake)mQuakeMap.get(position)).getId();
-		return id;
+		return mQuakeMap.get(position).getId();
 	}
 
 	private static final
-	SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+	SimpleDateFormat mDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
@@ -80,11 +87,18 @@ public class EarthquakeAdapter extends BaseAdapter implements AdapterView.OnItem
 				Log.e(TAG, "getView: object did not covert to Quake");
 				return quakeListRecView;
 			}
-			
 			quakeListId.setText(Integer.toString(q.getId()));
 			String dateStr = mDateFormat.format(q.getDate());
 			quakeListDate.setText(dateStr);
-			quakeListSummary.setText(q.getDetails());
+			String details = q.getDetails()+ "     ";
+			quakeListSummary.setText(details);
+			if(q.getMagnitude()>4)
+			{
+				quakeListDate.setBackgroundColor(Color.RED);
+			}else{
+				quakeListDate.setBackgroundColor(Color.WHITE);
+			}
+
 		} catch (Exception e) {
 			Log.e(TAG, "getView err:"+e);
 		}
@@ -102,33 +116,33 @@ public class EarthquakeAdapter extends BaseAdapter implements AdapterView.OnItem
             int db = 0;
             int idx = 0;
             int id =0;
+
             String lat;
             String lon;
+			double mag = 0.0;
             Location loc = new Location("");
             mQuakeMap.clear();
 			while(_Cursor.moveToNext())
 			{
 				try {
 					idx =	_Cursor.getInt(0);
-					db++;
 					dateStr = _Cursor.getString(1);
-					
 					d = mDateFormat.parse(dateStr);
-					db++;
 					info = _Cursor.getString(2);
 					lat = _Cursor.getString(3);
 					lon = _Cursor.getString(4);
 					loc.setLatitude(Double.parseDouble(lat));
 					loc.setLongitude(Double.parseDouble(lon));
-					db++;
-					q = new Quake(idx,d,info,loc);
-					db++;
-					mQuakeMap.put(key, q);
-					key++;;					
+					mag = _Cursor.getDouble(5);
+					q = new Quake(idx,d,info,loc,mag);
+
+					mQuakeMap.add(key, q);
+					key++;
 				} catch (Exception e) {
 					Log.e(TAG, "swapCursor parsing data debug="+db+" err:"+e);
 				}
 			}
+            sortByDate();
 			notifyDataSetChanged();
 		} catch (Exception e) {
 			Log.e(TAG, "swapCursor err:"+e);
@@ -139,4 +153,48 @@ public class EarthquakeAdapter extends BaseAdapter implements AdapterView.OnItem
 	public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 		return false;
 	}
+    private boolean mSortAscending=true;
+    void sortByDate()
+    {
+        if(mSortAscending) {
+            Collections.sort(mQuakeMap, new HeaderDateSortAscending());
+            mSortAscending = false;
+        }else{
+            Collections.sort(mQuakeMap, new HeaderDateSortDescending());
+            mSortAscending = true;
+        }
+        notifyDataSetChanged();
+    }
+    public class HeaderDateSortDescending implements Comparator<Quake>
+    {
+        public int compare(Quake lhs,Quake rhs)
+        {
+            if(lhs.getDate().before(rhs.getDate())) {
+                return 1;
+            }else if(lhs.getDate().after(rhs.getDate()))
+            {
+                return -1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+    public class HeaderDateSortAscending implements Comparator<Quake>
+    {
+        public int compare(Quake lhs,Quake rhs)
+        {
+            if(lhs.getDate().before(rhs.getDate())) {
+                return -1;
+            }else if(lhs.getDate().after(rhs.getDate()))
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
 }

@@ -10,10 +10,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="1dp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="1dp"
         android:background="#adaaad"
-        android:clickable="true"
         android:text="@string/quake_date_desc"
+        android:clickable="false"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium" >
     </TextView>
 
@@ -22,12 +25,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="1dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="50dp"
         android:background="#adbbad"
-        android:clickable="true"
+        android:clickable="false"
         android:text="@string/quake_info_desc"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium" >
     </TextView>
 
->>>>>>> branch 'working' of https://github.com/mooseandpebs/EarthquateChap9_3.git
 </LinearLayout>

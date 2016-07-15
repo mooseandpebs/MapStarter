@@ -29,7 +29,15 @@ public class Quake {
 	    link = "";
 	  }
 
-  public Quake(Date _d, String _det, Location _loc, double _mag, String _link) {
+    public Quake(int _id, Date _d, String _det,Location _loc,double _magnitude) {
+        id = _id;
+        date = _d;
+        details = _det;
+        location = new Location(_loc);
+        magnitude = _magnitude;
+        link = "";
+    }
+    public Quake(Date _d, String _det, Location _loc, double _mag, String _link) {
     id = -1;
 	date = _d;
     details = _det;

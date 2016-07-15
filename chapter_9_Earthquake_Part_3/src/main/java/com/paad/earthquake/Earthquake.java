@@ -97,6 +97,11 @@ public class Earthquake extends FragmentActivity implements
 		}
 	}
 
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+	}
+
 	public static final String UPDATE_EARTHQUAKE_SERVICE_EXTRA_KEY = "UPDATE_EARTHQUAKE_SERVICE_EXTRA_KEY";
 
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -230,6 +235,7 @@ public class Earthquake extends FragmentActivity implements
 				if(mFrag != null) {
 					mMapFragment.getFragmentManager().beginTransaction()
 							.show(mFrag).commit();
+
 				}
 				setMapProperties();
 			}
@@ -250,6 +256,12 @@ public class Earthquake extends FragmentActivity implements
 			//mMapFragment.getFragmentManager().beginTransaction().replace(mMapFragment.getView(),mMapFragment)
 			//		.addToBackStack(MAP_FRAGMENT).commit();
 			mMap = googleMap;
+			mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+				@Override
+				public void onMapClick(LatLng latLng) {
+
+				}
+			});
 			setMapProperties();
 		} catch (Exception e) {
 			Log.e(TAG, "onMapReady err:" + e);
@@ -276,9 +288,8 @@ public class Earthquake extends FragmentActivity implements
 		} catch (Exception e) {
 			Log.e(TAG, "setMapProperties err:" + e);
 		}
-
-
 	}
+
 
 	@Override
 	public void onStart() {

@@ -68,6 +68,7 @@ com/google/android/gms/common/SignInButton.class
 android/support/v4/media/MediaBrowserCompat$ItemCallback.class
 android/support/v7/widget/ViewUtils.class
 android/support/v4/media/MediaBrowserCompat.class
+com/google/android/gms/maps/GoogleMap$OnMapClickListener.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
 android/support/v4/media/session/MediaSessionCompat$OnActiveChangeListener.class
 android/support/v7/app/ActionBar$OnNavigationListener.class
@@ -291,6 +292,7 @@ android/support/v4/widget/CursorAdapter.class
 android/support/v4/util/DebugUtils.class
 android/support/v4/media/MediaMetadataCompat.class
 android/support/annotation/LayoutRes.class
+com/paad/earthquake/Earthquake$1.class
 android/support/annotation/RequiresPermission$Read.class
 android/support/v7/view/menu/CascadingMenuPopup$HorizPosition.class
 android/support/v4/app/FragmentActivity$HostCallbacks.class
